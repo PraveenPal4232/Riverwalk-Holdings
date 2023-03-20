@@ -19,10 +19,6 @@
       src: url("https://praveen-terralogic.github.io/capital/font/Avenir-Black.woff") format('woff');
       font-weight: bold;
     }
-
-    body {
-      font-family: Avenir !important;
-    }
 	
 html,
 body {
@@ -141,10 +137,10 @@ img.g-img + div {
 	background: #000000;
 }
 .bg_dark{
-	background: rgba(0,0,0,.8);
+	background: #21508F;
 }
 .email-section{
-	padding:2.5em;
+	padding: 1em 2.5em;
 }
 
 /*BUTTON*/
@@ -170,28 +166,29 @@ img.g-img + div {
 }
 
 h1,h2,h3,h4,h5,h6{
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Avenir', sans-serif;
 	color: #000000;
 	margin-top: 0;
 }
 
 body{
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Avenir', sans-serif;
 	font-weight: 400;
 	font-size: 15px;
 	line-height: 1.8;
-	color: rgba(0,0,0,.4);
+	color: #000000;
 }
 
 a{
-	color: #0d0cb5;
+	color: inherit;
+	text-decoration: underline;
 }
 
 table{
 }
 /*LOGO*/
 .header{
-	background: linear-gradient(180deg, #DDEEFF 0%, rgba(173, 203, 232, 0) 100%);
+	background: linear-gradient(180deg, #DFECFA, #FFFFFF);
 }
 
 .logo h1{
@@ -202,7 +199,7 @@ table{
 	font-size: 20px;
 	font-weight: 700;
 	text-transform: uppercase;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Avenir', sans-serif;
 }
 
 .navigation{
@@ -259,10 +256,18 @@ table{
 	font-size: 20px;
 	line-height: 28px;
 	color: #0D3683;
+	margin-bottom: 0px;
 }
 /*HEADING SECTION*/
 
-.heading-section{
+.caption{
+	margin-top: 10px;
+	font-size: 12px;
+}
+.footer_text{
+	font-size: 8px;
+	line-height: 10px;
+	margin-bottom: 10px;
 }
 .heading-section h2{
 	color: #000000;
@@ -295,11 +300,6 @@ table{
 
 .heading-section-white{
 	color: rgba(255,255,255,.8);
-}
-.heading-section-white h2{
-	font-family: 
-	line-height: 1;
-	padding-bottom: 0;
 }
 .heading-section-white h2{
 	color: #ffffff;
@@ -357,6 +357,16 @@ table{
 }
 
 /*BLOG*/
+.blog_card{
+	padding: 0px;
+}
+.blog_card h3{
+	line-height: 24px;
+	margin-bottom: 0px;
+}
+.blog_card p{
+	margin-top: 5px;
+}
 .text-services .meta{
 	text-transform: uppercase;
 	font-size: 14px;
@@ -397,44 +407,39 @@ table{
 
 
 
-/*COUNTER*/
-.counter{
-	width: 100%;
-	position: relative;
-	z-index: 0;
-}
-.counter .overlay{
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	content: '';
-	width: 100%;
-	background: #000000;
-	z-index: -1;
-	opacity: .3;
-}
-.counter-text{
+/*PRODUCT TABLE*/
+.product_table{
+	font-size: 10px;
 	text-align: center;
+	margin-bottom: 4px !important;
 }
-.counter-text .num{
-	display: block;
+.product_table th,
+.product_table td{
+	background-color: #ffffff;
+	border:2px solid #DFECFA;
+	padding: 5px;
+}
+.product_table td h4,
+.product_table td p{
+	margin-top: 0px;
+	margin-bottom: 0px;
+	line-height: 14px;
+}
+
+.product_table caption{
+	text-transform: uppercase;
+	background-color: #21508F;
 	color: #ffffff;
-	font-size: 34px;
-	font-weight: 700;
-}
-.counter-text .name{
-	display: block;
-	color: rgba(255,255,255,.9);
-	font-size: 13px;
+	margin-bottom: 3px;
+	border-radius: 4px;
+	padding: 3px;
 }
 
 
 /*FOOTER*/
 
 .footer{
-	color: rgba(255,255,255,.5);
+	color: #ffffff;
 
 }
 .footer .heading{
@@ -448,9 +453,18 @@ table{
 .footer ul li{
 	list-style: none;
 	margin-bottom: 10px;
+	display: inline-block;
+	padding: 0px 50px;
 }
 .footer ul li a{
 	color: rgba(255,255,255,1);
+	text-align: center;
+}
+.footer ul li a img{
+	width: 30px;
+	display: block;
+	margin: auto;
+	padding-bottom: 10px;
 }
 
 
@@ -485,7 +499,7 @@ table{
           	<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
           		<tr>
           			<td class="logo" width="100%" style="text-align: center;">
-			            <h1><a href="#"><img width="150px" src="./images/logo.png" alt="Riverwalk Holdings" ></a></h1>
+			            <h1><a href="#"><img style="padding-top: 20px;padding-bottom:20px;width: 236px;" src="https://github.com/PraveenPal4232/Riverwalk-Holdings/blob/main/images/logo.png" alt="Riverwalk Holdings" ></a></h1>
 			          </td>
 					
           		</tr>
@@ -497,371 +511,257 @@ table{
           	</table>
           </td>
 	      </tr><!-- end tr -->
-				<tr>
-          <td valign="middle" class="hero bg_white" style="background-image: url(images/bg_1.jpg); background-size: cover; height: 400px;">
-          	<div class="overlay"></div>
-            <table>
-            	<tr>
-            		<td>
-            			<div class="text" style="padding: 0 3em; text-align: center;">
-            				<h2>We Create Modern Website</h2>
-            				<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-            				<div class="icon">
-	            				<a href="#">
-	                      <img src="images/002-play-button.png" alt="" style="width: 60px; max-width: 600px; height: auto; margin: auto; display: block;">
-	                    </a>
-	                  </div>
-            			</div>
-            		</td>
-            	</tr>
-            </table>
-          </td>
-	      </tr><!-- end tr -->
 	      <tr>
 		      <td class="bg_white">
 		        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
 		          <tr>
-		            <td class="bg_white email-section">
-		            	<div class="heading-section" style="text-align: center; padding: 0 30px;">
-		              	<h2>Our Services</h2>
-		              	<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+		            <td class="bg_white email-section" style="padding-bottom: 0px;">
+		            	<div class="heading-section" style="text-align: center;">
+						<img src="https://github.com/PraveenPal4232/Riverwalk-Holdings/blob/main/images/team_image.jpg" alt=""
+							style="width: 100%; height: auto; margin: auto; display: block;">
 		            	</div>
-		            	<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
-		            		<tr>
-		            			<td valign="top" width="33.333%" style="padding-top: 20px;" class="services">
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                          <tr>
-                            <td class="icon">
-                              <img src="images/001-diet.png" alt="" style="width: 60px; max-width: 600px; height: auto; margin: auto; display: block;">
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="text-services">
-                            	<h3>Branding</h3>
-                             	<p>Far far away, behind the word mountains, far from the countries</p>
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                      <td valign="top" width="33.333%" style="padding-top: 20px; background: rgba(0,0,0,.08);" class="services">
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                          <tr>
-                            <td class="icon">
-                              <img src="images/001-diet.png" alt="" style="width: 60px; max-width: 600px; height: auto; margin: auto; display: block;">
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="text-services">
-                            	<h3>Design</h3>
-                             	<p>Far far away, behind the word mountains, far from the countries</p>
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                      <td valign="top" width="33.333%" style="padding-top: 20px;" class="services">
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                          <tr>
-                            <td class="icon">
-                              <img src="images/003-recipe-book.png" alt="" style="width: 60px; max-width: 600px; height: auto; margin: auto; display: block;">
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="text-services">
-                            	<h3>Development</h3>
-                              <p>Far far away, behind the word mountains, far from the countries</p>
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                    </tr>
-		            	</table>
 		            </td>
 		          </tr><!-- end: tr -->
-		          <tr>
-		            <td class="bg_light email-section" style="width: 100%;">
-		            	<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
-		            		<tr>
-		            			<td valign="middle" width="50%">
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                          <tr>
-                            <td>
-                              <img src="images/about.jpg" alt="" style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;">
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                      <td valign="middle" width="50%">
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                          <tr>
-                            <td class="text-services" style="text-align: left; padding-left:25px;">
-                            	<div class="heading-section">
-								              	<h2>Business Strategy</h2>
-								              	<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-								              	<p><a href="#" class="btn btn-primary">Read more</a></p>
-								            	</div>
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                    </tr>
-		            	</table>
-		            </td>
-		          </tr><!-- end: tr -->
-		          <tr>
-		            <td class="bg_white email-section">
-		            	<div class="heading-section" style="text-align: center; padding: 0 30px;">
-		              	<h2>Projects</h2>
-		              	<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-		            	</div>
-		            	<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
-		            		<tr>
-                      <td valign="top" width="50%">
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                          <tr>
-                            <td style="padding-top: 20px; padding-right: 10px;">
-                              <a href="#"><img src="images/work-1.jpg" alt="" style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;"></a>
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                      <td valign="top" width="50%">
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                          <tr>
-                            <td style="padding-top: 20px; padding-left: 10px;">
-                              <a href="#"><img src="images/work-2.jpg" alt="" style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;"></a>
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                    </tr>
-		            	</table>
-		            	<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
-		            		<tr>
-                      <td valign="top" width="50%">
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                          <tr>
-                            <td style="padding-top: 20px; padding-right: 10px;">
-                              <a href="#"><img src="images/work-3.jpg" alt="" style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;"></a>
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                      <td valign="top" width="50%">
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                          <tr>
-                            <td style="padding-top: 20px; padding-left: 10px;">
-                              <a href="#"><img src="images/work-4.jpg" alt="" style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;"></a>
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                    </tr>
-		            	</table>
-		            </td>
-		          </tr><!-- end: tr -->
+				<tr>
+					<td class="bg_white email-section">
+						<div class="heading-section" style="text-align: left;">
+							<p>As Riverwalk completes its 1st year we're proud to reflect on some of the highlights and are excited to share the
+							progress we have made so far.</p>
+							
+							<p>We are thrilled to announce that we have successfully hit our fund target of INR 150 cr anchored by the Thakral Group
+							and other prominent family offices.</p>
+							
+							<p>Over the last 12 months, we’ve evaluated 1,200+ deals and invested in 7 under our core strategy. Our co-investment
+							strategy with complimentary value added to lead VCs is working out well enabling us to win deals.</p>
+						</div>
+					</td>
+				</tr><!-- end: tr -->
 
 		          <tr>
-			          <td valign="middle" class="counter" style="background-image: url(images/bg_1.jpg); background-size: cover; padding: 4em 0;">
-			          	<div class="overlay"></div>
-			            <table>
-			            	<tr>
-			            		<td valign="middle" width="33.333%">
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                          <tr>
-                            <td class="counter-text">
-                            	<span class="num">20</span>
-                            	<span class="name">Clients</span>
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                      <td valign="middle" width="33.333%">
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                          <tr>
-                            <td class="counter-text">
-                            	<span class="num">1200</span>
-                            	<span class="name">Projects</span>
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                      <td valign="middle" width="33.333%">
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                          <tr>
-                            <td class="counter-text">
-                            	<span class="num">100</span>
-                            	<span class="name">Coffee Cups</span>
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-			            	</tr>
-			            </table>
+					<td class="bg_white email-section" style="background-color: #DFECFA;padding:2.5em;">
+					<table class="product_table" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+						<caption>SASS</caption>
+						<tr>
+							<th width="25%">Name</th>
+							<th width="50%">Co-Investors</th>
+							<th width="25%">Stage and Updates</th>
+						</tr>
+						<tr>
+							<td width="25%"><img src="https://github.com/PraveenPal4232/Riverwalk-Holdings/blob/main/images/Name1.jpg" alt="" style="width: 100%; height: auto; margin: auto; display: block;"></td>
+							<td width="50%"><img src="https://github.com/PraveenPal4232/Riverwalk-Holdings/blob/main/images/Co-Investors1.jpg" alt="" style=" width: 100%; height: auto; margin: auto; display: block;"></td>
+							<td width="25%">
+								<div>
+									<h4>Series A</h4>
+									<p>Revenue growth by 2.7x on a YoY basis; closed 14 customers in Q3</p>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td width="25%"><img src="https://github.com/PraveenPal4232/Riverwalk-Holdings/blob/main/images/Name2.jpg" alt="" style="width: 100%; height: auto; margin: auto; display: block;">
+							</td>
+							<td width="50%"><img src="https://github.com/PraveenPal4232/Riverwalk-Holdings/blob/main/images/Co-Investors2.jpg" alt=""
+									style=" width: 100%; height: auto; margin: auto; display: block;"></td>
+							<td width="25%">
+								<div>
+									<h4>Pre-Series A</h4>
+									<p>Onboarded 30+ customers; revenue growing at 20% MoM</p>
+								</div>
+							</td>
+						</tr>
+					</table>
+					<table class="product_table" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+						<caption>Consumer Brand</caption>
+						<tr>
+							<th width="25%">Name</th>
+							<th width="50%">Co-Investors</th>
+							<th width="25%">Stage and Updates</th>
+						</tr>
+						<tr>
+							<td width="25%"><img src="https://github.com/PraveenPal4232/Riverwalk-Holdings/blob/main/images/Name3.jpg" alt=""
+									style="width: 100%; height: auto; margin: auto; display: block;"></td>
+							<td width="50%"><img src="https://github.com/PraveenPal4232/Riverwalk-Holdings/blob/main/images/Co-Investors3.jpg" alt=""
+									style=" width: 100%; height: auto; margin: auto; display: block;"></td>
+							<td width="25%">
+								<div>
+									<h4>Series B</h4>
+									<p>Achieved EBIDTA level profitability; registered 78% YoY growth in Q3</p>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td width="25%"><img src="https://github.com/PraveenPal4232/Riverwalk-Holdings/blob/main/images/Name4.jpg" alt=""
+									style="width: 100%; height: auto; margin: auto; display: block;">
+							</td>
+							<td width="50%"><img src="https://github.com/PraveenPal4232/Riverwalk-Holdings/blob/main/images/Co-Investors4.jpg" alt=""
+									style=" width: 100%; height: auto; margin: auto; display: block;"></td>
+							<td width="25%">
+								<div>
+									<h4>Pre-Series A</h4>
+									<p>Achieved CM2 level profitability; registered ~30% QoQ in Q3</p>
+								</div>
+							</td>
+						</tr>
+					</table>
+					<table class="product_table" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+						<caption>Fin Tech</caption>
+						<tr>
+							<th width="25%">Name</th>
+							<th width="50%">Co-Investors</th>
+							<th width="25%">Stage and Updates</th>
+						</tr>
+						<tr>
+							<td width="25%"><img src="https://github.com/PraveenPal4232/Riverwalk-Holdings/blob/main/images/Name5.jpg" alt=""
+									style="width: 100%; height: auto; margin: auto; display: block;"></td>
+							<td width="50%"><img src="https://github.com/PraveenPal4232/Riverwalk-Holdings/blob/main/images/Co-Investors5.jpg" alt=""
+									style=" width: 100%; height: auto; margin: auto; display: block;"></td>
+							<td width="25%">
+								<div>
+									<h4>Series A</h4>
+									<p>Gained strong momentum, revenue growing at 50%+ MoM</p>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td width="25%"><img src="https://github.com/PraveenPal4232/Riverwalk-Holdings/blob/main/images/Name6.jpg" alt=""
+									style="width: 100%; height: auto; margin: auto; display: block;">
+							</td>
+							<td width="50%"><img src="https://github.com/PraveenPal4232/Riverwalk-Holdings/blob/main/images/Co-Investors6.jpg" alt=""
+									style=" width: 100%; height: auto; margin: auto; display: block;"></td>
+							<td width="25%">
+								<div>
+									<h4>Pre-Series A</h4>
+									<p>N/A</p>
+								</div>
+							</td>
+						</tr>
+					</table>
+					<table class="product_table" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+						<caption>B2B Market Place</caption>
+						<tr>
+							<th width="25%">Name</th>
+							<th width="50%">Co-Investors</th>
+							<th width="25%">Stage and Updates</th>
+						</tr>
+						<tr>
+							<td width="25%"><img src="https://github.com/PraveenPal4232/Riverwalk-Holdings/blob/main/images/Name7.jpg" alt=""
+									style="width: 100%; height: auto; margin: auto; display: block;">
+							</td>
+							<td width="50%"><img src="https://github.com/PraveenPal4232/Riverwalk-Holdings/blob/main/images/Co-Investors7.jpg" alt=""
+									style=" width: 100%; height: auto; margin: auto; display: block;"></td>
+							<td width="25%">
+								<div>
+									<h4>Series A</h4>
+									<p>Onboarded 12+ enterprise customers including TATA, ITC, TVS Motors etc.</p>
+								</div>
+							</td>
+						</tr>
+					</table>
 			          </td>
 				      </tr><!-- end tr -->
-				      <tr>
-		            <td class="bg_white email-section">
-		            	<div class="heading-section" style="text-align: center; padding: 0 30px;">
-		              	<h2>Our Blog</h2>
-		              	<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-		            	</div>
-		            	<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
-		            		<tr>
-                      <td valign="top" width="50%" style="padding-top: 20px;">
-                        <table role="presentation" cellspacing="0" cellpadding="10" border="0" width="100%">
-                          <tr>
-                            <td>
-                              <img src="images/blog-1.jpg" alt="" style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;">
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="text-services" style="text-align: left;">
-                            	<p class="meta"><span>Posted on Feb 18, 2019</span> <span>Food</span></p>
-                            	<h3>Business Key to Success</h3>
-                             	<p>Far far away, behind the word mountains, far from the countries</p>
-                             	<p><a href="#" class="btn btn-primary">Read more</a></p>
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                      <td valign="top" width="50%" style="padding-top: 20px;">
-                        <table role="presentation" cellspacing="0" cellpadding="10" border="0" width="100%">
-                          <tr>
-                            <td>
-                              <img src="images/blog-2.jpg" alt="" style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;">
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="text-services" style="text-align: left;">
-                            	<p class="meta"><span>Posted on Feb 18, 2019</span> <span>Food</span></p>
-                            	<h3>Web Design Technique</h3>
-                              <p>Far far away, behind the word mountains, far from the countries</p>
-                              <p><a href="#" class="btn btn-primary">Read more</a></p>
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                    </tr>
-		            	</table>
-		            </td>
-		          </tr><!-- end: tr -->
+					<tr>
+						<td class="bg_white email-section">
+							<div class="heading-section" style="text-align: left;">
+								<p>Our investment strategy was to focus on strong fundamentals and capital-efficient businesses. This has already started to yield impressive results.</p>
+					
+								<p>3 companies out of the seven have raised follow-on capital resulting in significant markups in just 12 months. <a href="https://techcrunch.com/2023/03/02/spotdraft-shows-contract-lifecycle-management-is-still-profitable-raises-26m/" target="_blank" rel="noopener">Spotdraft</a>, <a href="https://www.vccircle.com/anicutcapital-sharrp-ventures-back-the-ayurveda-experience" target="_blank" rel="noopener">The Ayurveda Experience</a>, the fund-raise by Homeville is yet to be announced.</p>
+					
+							</div>
+						</td>
+					</tr><!-- end: tr -->
+						<tr>
+							<td class="bg_white email-section" style="padding-top:0px;padding-bottom: 0px;">
+								<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+									<tr>
+										<td valign="top" width="50%" style="padding-right: 0.5em;">
+											<table role="presentation" cellspacing="0" cellpadding="10" border="0" width="100%">
+												<tr>
+													<td class="blog_card">
+														<a href="https://techcrunch.com/2023/03/02/spotdraft-shows-contract-lifecycle-management-is-still-profitable-raises-26m/"
+															target="_blank" rel="noopener" style="text-decoration: none;">
+														<h3>SpotDraft shows that contract lifecycle management remains profitable, raises $26M</h3>
+														<p class="meta"><span>Posted on March 2, 2023</span></p>
+														<img src="https://github.com/PraveenPal4232/Riverwalk-Holdings/blob/main/images/blog-1.jpg" alt="" style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;"></a>
+														
+													</td>
+												</tr>
+											</table>
+										</td>
+										<td valign="top" width="50%" style="padding-left: 0.5em;">
+											<table role="presentation" cellspacing="0" cellpadding="10" border="0" width="100%">
+												<tr>
+													<td class="blog_card">
+														<a href="https://www.vccircle.com/anicutcapital-sharrp-ventures-back-the-ayurveda-experience" target="_blank"
+															rel="noopener" style="text-decoration: none;">
+														<h3>Anicut Capital, Sharrp Ventures Back The Ayurveda Experience</h3>
+														<p class="meta"><span>Posted on 20 Dec 2022</span></p>
+														<img src="https://github.com/PraveenPal4232/Riverwalk-Holdings/blob/main/images/blog-2.jpg" alt="" style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;">
+														</td></a>
+														
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr><!-- end: tr -->
+					<tr>
+						<td class="bg_white email-section">
+							<div class="heading-section" style="text-align: left;">
+								<p>While up rounds and markups are a good early signal of breakouts - this was followed with 3x top-line growth for all companies.</p>
+					
+								<p>As ecosystem initiatives, we hosted industry events such as India Global Forum and mixers for founders and investors across Delhi and Bangalore.</p>
+					
+							</div>
+						</td>
+					</tr><!-- end: tr -->
+					<tr>
+						<td class="bg_white email-section" style="padding-top: 0px;">
+							<div class="heading-section" style="text-align: center;">
+								<img src="https://github.com/PraveenPal4232/Riverwalk-Holdings/blob/main/images/team_image2.jpg" alt="" style="width: 100%; height: auto; margin: auto; display: block;">
+								
+							</div>
+							<div>
+								<p class="caption">Hosted a mixer in partnership with K-Capital to engage with the Delhi community, the event witnessed the participation of 70+ VCs.</p></div>
+						</td>
+					</tr><!-- end: tr -->
+					<tr>
+						<td class="bg_white email-section" style="padding-top: 0px;padding-bottom: 0px;">
+							<div class="heading-section" style="text-align: center;">
+								<img src="https://github.com/PraveenPal4232/Riverwalk-Holdings/blob/main/images/Global_Forum_event.jpg" alt="" style="width: 100%; height: auto; margin: auto; display: block;">
+					
+							</div>
+							<div>
+								<p class="caption">Sponsored the India Global Forum event in Dubai that saw participation from 400+ guests from the start-up ecosystem. Satveer along with portfolio founder, Shashank from Spotdraft were co-panellists and had an engaging discussion on “Borderless Ambitions — First-Hand Lessons on Building a Global Company”.</p>
+							</div>
+						</td>
+					</tr><!-- end: tr -->
+					<tr>
+						<td class="bg_white email-section" style="padding-top: 0px;">
+							<div class="heading-section" style="text-align: left;">
+								<p>We also launched Riverwalk’s Credits program for our portfolio companies. Through this program, we envision building a value-add channel partnership stack to offer state-of-the-art tools to our portfolio companies. We have onboarded 20
+								such platforms with a combined free credit of ~$2.5M being issued to each of the portfolio companies.</p>
+								
+								<p>We have also launched our <a href="https://docsend.com/view/5g76gt2gk325psdz" target="_blank" rel="noopener">HR tech</a> & <a href="https://abhisheksingh-4899.medium.com/status-quo-and-why-b2b-marketplaces-are-needed-more-than-ever-27bbdf64691c" target="_blank" rel="noopener">2B Marketplace</a> report which was widely covered and has started appearing as reference points in startup fundraising decks.</p>
+								
+								<p>All in all amidst the tricky macroeconomic conditions we’ve been focused on being disciplined and watchful.</p>
+								
+								<p>We’re strong believers that this is India’s decade and that the largest incremental gains will accrue to technology startups as India accelerates to a USD 10 trillion GDP economy. We’re committed to investing in innovative and
+								disruptive startups and look forward to the possibility of working with you.</p>
+								
+								<p>Best wishes,<br>
+								Team Riverwalk</p>
+					
+							</div>
+						</td>
+					</tr><!-- end: tr -->
+				    
 		          <tr>
-		            <td class="bg_light email-section">
-		            	<div class="heading-section" style="text-align: center; padding: 0 30px;">
-		              	<h2>Our Team</h2>
-		              	<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-		            	</div>
-		            	<table role="presentation" border="0" cellpadding="10" cellspacing="0" width="100%">
-		            		<tr>
-                      <td valign="top" width="33.333%" style="padding-top: 20px;">
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                          <tr>
-                            <td>
-                              <img src="images/person_1.jpg" alt="" style="width: 100%; max-width: 600px; height: auto; margin: auto; margin-bottom: 20px; display: block;">
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="text-testimony" style="text-align: center;">
-                            	<h3 class="name">Ronald Tuff</h3>
-                            	<span class="position">Businessman</span>
-                             	<p>Far far away, behind the word mountains</p>
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                      <td valign="top" width="33.333%" style="padding-top: 20px;">
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                          <tr>
-                            <td>
-                              <img src="images/person_2.jpg" alt="" style="width: 100%; max-width: 600px; height: auto; margin: auto; margin-bottom: 20px; display: block;">
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="text-testimony" style="text-align: center;">
-                            	<h3 class="name">Willam Clarson</h3>
-                            	<span class="position">Businessman</span>
-                              <p>Far far away, behind the word mountains</p>
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                      <td valign="top" width="33.333%" style="padding-top: 20px;">
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                          <tr>
-                            <td>
-                              <img src="images/person_3.jpg" alt="" style="width: 100%; max-width: 600px; height: auto; margin: auto; margin-bottom: 20px; display: block;">
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="text-testimony" style="text-align: center;">
-                            	<h3 class="name">Willam Clarson</h3>
-                            	<span class="position">Businessman</span>
-                              <p>Far far away, behind the word mountains</p>
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                    </tr>
-		            	</table>
-		            </td>
-		          </tr><!-- end: tr -->
-		          <tr>
-		            <td class="bg_white email-section" style="width: 100%;">
-		            	<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
-		            		<tr>
-		            			<td valign="middle" width="50%">
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                          <tr>
-                            <td>
-                              <img src="images/bg_2.jpg" alt="" style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;">
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                      <td valign="middle" width="50%">
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                          <tr>
-                            <td class="text-services" style="text-align: left; padding-left:25px;">
-                            	<div class="heading-section">
-								              	<h2>Our Features</h2>
-								            	</div>
-								            	<div class="services-list">
-								            		<img src="images/checked.png" alt="" style="width: 50px; max-width: 600px; height: auto; display: block;">
-								            		<div class="text">
-								            			<h3>Responsive</h3>
-								            			<p>A small river named Duden flows by their</p>
-								            		</div>
-								            	</div>
-								            	<div class="services-list">
-								            		<img src="images/checked.png" alt="" style="width: 50px; max-width: 600px; height: auto; display: block;">
-								            		<div class="text">
-								            			<h3>Responsive</h3>
-								            			<p>A small river named Duden flows by their</p>
-								            		</div>
-								            	</div>
-								            	<div class="services-list">
-								            		<img src="images/checked.png" alt="" style="width: 50px; max-width: 600px; height: auto; display: block;">
-								            		<div class="text">
-								            			<h3>Responsive</h3>
-								            			<p>A small river named Duden flows by their</p>
-								            		</div>
-								            	</div>
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                    </tr>
-		            	</table>
-		            </td>
-		          </tr><!-- end: tr -->
-		          <tr>
-		            <td class="primary email-section" style="text-align:center;">
-		            	<div class="heading-section heading-section-white">
-		              	<h2>Get Ready For Modern Design</h2>
-		              	<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-		              	<p><a href="#" class="btn btn-white-outline">Get Started</a></p>
-		            	</div>
-		            </td>
+					<td>
+						<div class="">
+							<img src="https://github.com/PraveenPal4232/Riverwalk-Holdings/blob/main/images/wave.png" alt="" style="width: 100%; height: 50px; margin: auto; display: block;">
+						</div>
+					</td>
+		          
 		          </tr><!-- end: tr -->
 		        </table>
 
@@ -871,69 +771,42 @@ table{
       </table>
       <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto;">
       	<tr>
-          <td valign="middle" class="bg_black footer email-section">
+          <td valign="middle" class="bg_dark footer email-section">
             <table>
             	<tr>
-                <td valign="top" width="33.333%" style="padding-top: 20px;">
-                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                    <tr>
-                      <td style="text-align: left; padding-right: 10px;">
-                      	<h3 class="heading">About</h3>
-                      	<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                      </td>
-                    </tr>
-                  </table>
+                <td valign="top" style="text-align: center;">
+                 <p class="footer_text" style="max-width: 315px;">Copyright © 2023 Riverwalk Holdings, All rights reserved.
+				Riverwalk Holdings is an India-focused fund that invests in early-stage companies from Seed to Series A.</p>
+
+				<p class="footer_text" style="max-width: 315px; margin-bottom: 0px;">Reach out to us at: <a href="https://riverwalkholdings.com/" target="_blank" rel="noopener">Website</a> | <a href="https://www.linkedin.com/company/riverwalk-holdings/" target="_blank" rel="noopener">LinkedIn</a> Want to change how you receive these emails? You can update your preferences or unsubscribe from this list.</p>
                 </td>
-                <td valign="top" width="33.333%" style="padding-top: 20px;">
-                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                    <tr>
-                      <td style="text-align: left; padding-left: 5px; padding-right: 5px;">
-                      	<h3 class="heading">Contact Info</h3>
-                      	<ul>
-					                <li><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
-					                <li><span class="text">+2 392 3929 210</span></a></li>
-					              </ul>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-                <td valign="top" width="33.333%" style="padding-top: 20px;">
-                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                    <tr>
-                      <td style="text-align: left; padding-left: 10px;">
-                      	<h3 class="heading">Useful Links</h3>
-                      	<ul>
-					                <li><a href="#">Home</a></li>
-					                <li><a href="#">About</a></li>
-					                <li><a href="#">Services</a></li>
-					                <li><a href="#">Work</a></li>
-					              </ul>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
+               
               </tr>
             </table>
           </td>
         </tr><!-- end: tr -->
         <tr>
-        	<td valign="middle" class="bg_black footer email-section">
+        	<td valign="middle" class="bg_dark footer email-section">
         		<table>
             	<tr>
-                <td valign="top" width="33.333%">
+                <td valign="top">
                   <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                     <tr>
-                      <td style="text-align: left; padding-right: 10px;">
-                      	<p>&copy; 2018 Corporate. All Rights Reserved</p>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-                <td valign="top" width="33.333%">
-                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                    <tr>
-                      <td style="text-align: right; padding-left: 5px; padding-right: 5px;">
-                      	<p><a href="#" style="color: rgba(255,255,255,.4);">Unsubcribe</a></p>
+                      <td style="text-align: center;">
+                      	<ul class="footer_link_list footer_text">
+							<li>
+								<a href="https://www.linkedin.com/company/riverwalk-holdings/" target="_blank" rel="noopener" class="footer_link" style="text-decoration: none;">
+									<img src="https://github.com/PraveenPal4232/Riverwalk-Holdings/blob/main/images/LinkedIn.png" alt="LinkedIn">
+									<span>LinkedIn</span>
+								</a>
+							</li>
+							<li>
+								<a href="https://riverwalkholdings.com/" target="_blank" rel="noopener class="footer_link" style="text-decoration: none;">
+									<img src="https://github.com/PraveenPal4232/Riverwalk-Holdings/blob/main/images/Website_link.png" alt="Website">
+									<span>Website Link</span>
+								</a>
+							</li>
+						</ul>
                       </td>
                     </tr>
                   </table>
