@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width"> <!-- Forcing initial-scale shouldn't be necessary -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Use the latest (edge) version of IE rendering engine -->
     <meta name="x-apple-disable-message-reformatting">  <!-- Disable auto-scale in iOS 10 Mail entirely -->
-    <title>Riverwalk Holdings</title> <!-- The title tag shows in email notifications, like Android 4.4. -->
+    <title></title> <!-- The title tag shows in email notifications, like Android 4.4. -->
 
     <!-- CSS Reset : BEGIN -->
 <style>
@@ -131,7 +131,7 @@ img.g-img + div {
 	background: #ffffff;
 }
 .bg_light{
-	background: #fafafa;
+	background: #DFECFA;
 }
 .bg_black{
 	background: #000000;
@@ -184,8 +184,6 @@ a{
 	text-decoration: underline;
 }
 
-table{
-}
 /*LOGO*/
 .header{
 	background: linear-gradient(180deg, #DFECFA, #FFFFFF);
@@ -201,7 +199,6 @@ table{
 	text-transform: uppercase;
 	font-family: 'Avenir', sans-serif;
 }
-
 .navigation{
 	padding: 0;
 }
@@ -215,40 +212,6 @@ table{
 .navigation li a{
 	color: rgba(0,0,0,.4);
 }
-
-/*HERO*/
-.hero{
-	position: relative;
-	z-index: 0;
-}
-.hero .overlay{
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	content: '';
-	width: 100%;
-	background: #000000;
-	z-index: -1;
-	opacity: .3;
-}
-.hero .icon{
-}
-.hero .icon a{
-	display: block;
-	width: 60px;
-	margin: 0 auto;
-}
-.hero .text{
-	color: rgba(255,255,255,.8);
-}
-.hero .text h2{
-	color: #ffffff;
-	font-size: 30px;
-	margin-bottom: 0;
-}
-
 
 /*HEADING SECTION*/
 .heading{
@@ -419,13 +382,16 @@ table{
 	border:2px solid #DFECFA;
 	padding: 5px;
 }
+.product_table td h4{
+	font-size: 10px;
+	text-align: center;
+}
 .product_table td h4,
 .product_table td p{
 	margin-top: 0px;
 	margin-bottom: 0px;
 	line-height: 14px;
 }
-
 .product_table caption{
 	text-transform: uppercase;
 	background-color: #21508F;
@@ -454,7 +420,7 @@ table{
 	list-style: none;
 	margin-bottom: 10px;
 	display: inline-block;
-	padding: 0px 50px;
+	padding: 0px 25px;
 }
 .footer ul li a{
 	color: rgba(255,255,255,1);
@@ -466,20 +432,46 @@ table{
 	margin: auto;
 	padding-bottom: 10px;
 }
-
+#templateHeader,
+#templateBody{
+	padding-top: 0px !important;
+	padding-bottom: 0px !important;
+	border: none !important;
+}
 
 @media screen and (max-width: 500px) {
-
-	.icon{
-		text-align: left;
+	p{
+		font-size: 14px;
 	}
+	.blog_card h3 {
+    font-size: 11px !important;
+	line-height: 15px;
+}
+.blog_card p {
+    font-size: 12px;
+}
+	.email-section {
+    padding: 1em !important;
+}
+.product_table td p,
+.product_table td h4,
+.product_table th {
+    font-size: 7px !important;
+    line-height: 9px !important;
+}
+}
 
-	.text-services{
-		padding-left: 0;
-		padding-right: 20px;
-		text-align: left;
-	}
-
+.mt-0{
+	margin-top: 0px !important;
+}
+.mb-0{
+	margin-bottom: 0px !important;
+}
+.pt-0{
+	padding-top: 0px !important;
+}
+.pb-0{
+	padding-bottom: 0px !important;
 }
 </style>
 
@@ -495,17 +487,17 @@ table{
     	<!-- BEGIN BODY -->
       <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto;">
       	<tr>
-          <td valign="top" class="header" style="padding: 1em 2.5em;">
+          <td valign="top" class="email-section header">
           	<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
           		<tr>
           			<td class="logo" width="100%" style="text-align: center;">
-			            <h1><a href="#"><img style="padding-top: 20px;padding-bottom:20px;width: 236px;" src="https://raw.githubusercontent.com/PraveenPal4232/Riverwalk-Holdings/main/images/new_logo.png" alt="Riverwalk Holdings" ></a></h1>
+			            <h1 style="text-align: center;"><a href="#"><img style="padding-top: 20px;padding-bottom:20px;width: 236px;" src="https://raw.githubusercontent.com/PraveenPal4232/Riverwalk-Holdings/main/images/new_logo.png" alt="Riverwalk Holdings" ></a></h1>
 			          </td>
 					
           		</tr>
 				<tr>
 					<td width="100%" style="text-align: center;">
-						<h2 class="heading">CELEBRATING <b>ONE YEAR</b> OF INVESTING IN <b>GREAT BUSINESSES!</b></h2>
+						<h2 class="heading" style="text-align: center;">CELEBRATING <b>ONE YEAR</b> OF INVESTING IN <b>GREAT BUSINESSES!</b></h2>
 					</td>
 				</tr>
           	</table>
@@ -515,7 +507,7 @@ table{
 		      <td class="bg_white">
 		        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
 		          <tr>
-		            <td class="bg_white email-section" style="padding-bottom: 0px;">
+		            <td class="bg_white email-section">
 		            	<div class="heading-section" style="text-align: center;">
 						<img src="https://raw.githubusercontent.com/PraveenPal4232/Riverwalk-Holdings/main/images/team_image.jpg" alt=""
 							style="width: 100%; height: auto; margin: auto; display: block;">
@@ -525,7 +517,7 @@ table{
 				<tr>
 					<td class="bg_white email-section">
 						<div class="heading-section" style="text-align: left;">
-							<p>As Riverwalk completes its 1st year we're proud to reflect on some of the highlights and are excited to share the
+							<p class="mt-0">As Riverwalk completes its 1st year we're proud to reflect on some of the highlights and are excited to share the
 							progress we have made so far.</p>
 							
 							<p>We are thrilled to announce that we have successfully hit our fund target of INR 150 cr anchored by the Thakral Group
@@ -538,18 +530,18 @@ table{
 				</tr><!-- end: tr -->
 
 		          <tr>
-					<td class="bg_white email-section" style="background-color: #DFECFA;padding:2.5em;">
+					<td class="bg_light email-section" style="padding-top:2.5em;padding-bottom: 2.5em;">
 					<table class="product_table" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
 						<caption>SASS</caption>
 						<tr>
 							<th width="25%">Name</th>
-							<th width="50%">Co-Investors</th>
-							<th width="25%">Stage and Updates</th>
+							<th width="45%">Co-Investors</th>
+							<th width="30%">Stage and Updates</th>
 						</tr>
 						<tr>
 							<td width="25%"><img src="https://raw.githubusercontent.com/PraveenPal4232/Riverwalk-Holdings/main/images/Name1.jpg" alt="" style="width: 100%; height: auto; margin: auto; display: block;"></td>
-							<td width="50%"><img src="https://raw.githubusercontent.com/PraveenPal4232/Riverwalk-Holdings/main/images/Co-Investors1.jpg" alt="" style=" width: 100%; height: auto; margin: auto; display: block;"></td>
-							<td width="25%">
+							<td width="45%"><img src="https://raw.githubusercontent.com/PraveenPal4232/Riverwalk-Holdings/main/images/Co-Investors1.jpg" alt="" style=" width: 100%; height: auto; margin: auto; display: block;"></td>
+							<td width="30%">
 								<div>
 									<h4>Series A</h4>
 									<p>Revenue growth by 2.7x on a YoY basis; closed 14 customers in Q3</p>
@@ -559,9 +551,9 @@ table{
 						<tr>
 							<td width="25%"><img src="https://raw.githubusercontent.com/PraveenPal4232/Riverwalk-Holdings/main/images/Name2.jpg" alt="" style="width: 100%; height: auto; margin: auto; display: block;">
 							</td>
-							<td width="50%"><img src="https://raw.githubusercontent.com/PraveenPal4232/Riverwalk-Holdings/main/images/Co-Investors2.jpg" alt=""
+							<td width="45%"><img src="https://raw.githubusercontent.com/PraveenPal4232/Riverwalk-Holdings/main/images/Co-Investors2.jpg" alt=""
 									style=" width: 100%; height: auto; margin: auto; display: block;"></td>
-							<td width="25%">
+							<td width="30%">
 								<div>
 									<h4>Pre-Series A</h4>
 									<p>Onboarded 30+ customers; revenue growing at 20% MoM</p>
@@ -573,15 +565,15 @@ table{
 						<caption>Consumer Brand</caption>
 						<tr>
 							<th width="25%">Name</th>
-							<th width="50%">Co-Investors</th>
-							<th width="25%">Stage and Updates</th>
+							<th width="45%">Co-Investors</th>
+							<th width="30%">Stage and Updates</th>
 						</tr>
 						<tr>
 							<td width="25%"><img src="https://raw.githubusercontent.com/PraveenPal4232/Riverwalk-Holdings/main/images/Name3.jpg" alt=""
 									style="width: 100%; height: auto; margin: auto; display: block;"></td>
-							<td width="50%"><img src="https://raw.githubusercontent.com/PraveenPal4232/Riverwalk-Holdings/main/images/Co-Investors3.jpg" alt=""
+							<td width="45%"><img src="https://raw.githubusercontent.com/PraveenPal4232/Riverwalk-Holdings/main/images/Co-Investors3.jpg" alt=""
 									style=" width: 100%; height: auto; margin: auto; display: block;"></td>
-							<td width="25%">
+							<td width="30%">
 								<div>
 									<h4>Series B</h4>
 									<p>Achieved EBIDTA level profitability; registered 78% YoY growth in Q3</p>
@@ -606,15 +598,15 @@ table{
 						<caption>Fin Tech</caption>
 						<tr>
 							<th width="25%">Name</th>
-							<th width="50%">Co-Investors</th>
-							<th width="25%">Stage and Updates</th>
+							<th width="45%">Co-Investors</th>
+							<th width="30%">Stage and Updates</th>
 						</tr>
 						<tr>
 							<td width="25%"><img src="https://raw.githubusercontent.com/PraveenPal4232/Riverwalk-Holdings/main/images/Name5.jpg" alt=""
 									style="width: 100%; height: auto; margin: auto; display: block;"></td>
-							<td width="50%"><img src="https://raw.githubusercontent.com/PraveenPal4232/Riverwalk-Holdings/main/images/Co-Investors5.jpg" alt=""
+							<td width="45%"><img src="https://raw.githubusercontent.com/PraveenPal4232/Riverwalk-Holdings/main/images/Co-Investors5.jpg" alt=""
 									style=" width: 100%; height: auto; margin: auto; display: block;"></td>
-							<td width="25%">
+							<td width="30%">
 								<div>
 									<h4>Series A</h4>
 									<p>Gained strong momentum, revenue growing at 50%+ MoM</p>
@@ -625,9 +617,9 @@ table{
 							<td width="25%"><img src="https://raw.githubusercontent.com/PraveenPal4232/Riverwalk-Holdings/main/images/Name6.jpg" alt=""
 									style="width: 100%; height: auto; margin: auto; display: block;">
 							</td>
-							<td width="50%"><img src="https://raw.githubusercontent.com/PraveenPal4232/Riverwalk-Holdings/main/images/Co-Investors6.jpg" alt=""
+							<td width="45%"><img src="https://raw.githubusercontent.com/PraveenPal4232/Riverwalk-Holdings/main/images/Co-Investors6.jpg" alt=""
 									style=" width: 100%; height: auto; margin: auto; display: block;"></td>
-							<td width="25%">
+							<td width="30%">
 								<div>
 									<h4>Pre-Series A</h4>
 									<p>N/A</p>
@@ -639,16 +631,16 @@ table{
 						<caption>B2B Market Place</caption>
 						<tr>
 							<th width="25%">Name</th>
-							<th width="50%">Co-Investors</th>
-							<th width="25%">Stage and Updates</th>
+							<th width="45%">Co-Investors</th>
+							<th width="30%">Stage and Updates</th>
 						</tr>
 						<tr>
 							<td width="25%"><img src="https://raw.githubusercontent.com/PraveenPal4232/Riverwalk-Holdings/main/images/Name7.jpg" alt=""
 									style="width: 100%; height: auto; margin: auto; display: block;">
 							</td>
-							<td width="50%"><img src="https://raw.githubusercontent.com/PraveenPal4232/Riverwalk-Holdings/main/images/Co-Investors7.jpg" alt=""
+							<td width="45%"><img src="https://raw.githubusercontent.com/PraveenPal4232/Riverwalk-Holdings/main/images/Co-Investors7.jpg" alt=""
 									style=" width: 100%; height: auto; margin: auto; display: block;"></td>
-							<td width="25%">
+							<td width="30%">
 								<div>
 									<h4>Series A</h4>
 									<p>Onboarded 12+ enterprise customers including TATA, ITC, TVS Motors etc.</p>
@@ -669,7 +661,7 @@ table{
 						</td>
 					</tr><!-- end: tr -->
 						<tr>
-							<td class="bg_white email-section" style="padding-top:0px;padding-bottom: 0px;">
+							<td class="bg_white email-section pt-0 pb-0">
 								<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
 									<tr>
 										<td valign="top" width="50%" style="padding-right: 0.5em;">
@@ -679,7 +671,7 @@ table{
 														<a href="https://techcrunch.com/2023/03/02/spotdraft-shows-contract-lifecycle-management-is-still-profitable-raises-26m/"
 															target="_blank" rel="noopener" style="text-decoration: none;">
 														<h3>SpotDraft shows that contract lifecycle management remains profitable, raises $26M</h3>
-														<p class="meta"><span>Posted on March 2, 2023</span></p>
+														<p class="meta"><span>Posted on Mar 2, 2023</span></p>
 														<img src="https://raw.githubusercontent.com/PraveenPal4232/Riverwalk-Holdings/main/images/blog-11.jpg" alt="" style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;"></a>
 														
 													</td>
@@ -692,7 +684,7 @@ table{
 													<td class="blog_card">
 														<a href="https://www.vccircle.com/anicutcapital-sharrp-ventures-back-the-ayurveda-experience" target="_blank"
 															rel="noopener" style="text-decoration: none;">
-														<h3>Anicut Capital, Sharrp Ventures Back The Ayurveda Experience</h3>
+														<h3>Anicut Capital, Sharrp Ventures Back The Ayurveda Experience &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;</h3>
 														<p class="meta"><span>Posted on 20 Dec 2022</span></p>
 														<img src="https://raw.githubusercontent.com/PraveenPal4232/Riverwalk-Holdings/main/images/blog-12.jpg" alt="" style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;">
 														</td></a>
@@ -715,7 +707,7 @@ table{
 						</td>
 					</tr><!-- end: tr -->
 					<tr>
-						<td class="bg_white email-section" style="padding-top: 0px;">
+						<td class="bg_white email-section pt-0">
 							<div class="heading-section" style="text-align: center;">
 								<img src="https://raw.githubusercontent.com/PraveenPal4232/Riverwalk-Holdings/main/images/team_image2.jpg" alt="" style="width: 100%; height: auto; margin: auto; display: block;">
 								
@@ -725,7 +717,7 @@ table{
 						</td>
 					</tr><!-- end: tr -->
 					<tr>
-						<td class="bg_white email-section" style="padding-top: 0px;padding-bottom: 0px;">
+						<td class="bg_white email-section pt-0 pb-0">
 							<div class="heading-section" style="text-align: center;">
 								<img src="https://raw.githubusercontent.com/PraveenPal4232/Riverwalk-Holdings/main/images/Global_Forum_event.jpg" alt="" style="width: 100%; height: auto; margin: auto; display: block;">
 					
@@ -736,7 +728,7 @@ table{
 						</td>
 					</tr><!-- end: tr -->
 					<tr>
-						<td class="bg_white email-section" style="padding-top: 0px;">
+						<td class="bg_white email-section pt-0">
 							<div class="heading-section" style="text-align: left;">
 								<p>We also launched Riverwalk’s Credits program for our portfolio companies. Through this program, we envision building a value-add channel partnership stack to offer state-of-the-art tools to our portfolio companies. We have onboarded 20
 								such platforms with a combined free credit of ~$2.5M being issued to each of the portfolio companies.</p>
